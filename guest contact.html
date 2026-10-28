@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Hotel Management | Grand Horizon Hotel</title>
+  <link rel="stylesheet" href="hotel%20design.css">
+  <script src="hotel%20actions.js" defer></script>
+</head>
+<body>
+<header>
+  <nav class="navbar container">
+    <a class="logo" href="stay.html">Grand Horizon</a>
+    <button class="menu-toggle" aria-label="Toggle menu" aria-expanded="false">☰ Menu</button>
+    <ul class="nav-links">
+      <li><a href="stay.html">Home</a></li>
+      <li><a href="hotel%20info.html">About</a></li>
+      <li><a href="rooms.html">Rooms</a></li>
+      <li><a class="active" href="guest%20contact.html">Contact Owner</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section class="page-banner">
+    <p class="eyebrow">Guest Services</p>
+    <h1>Contact Hotel Management</h1>
+    <p>Ask about room availability, prices, check-in dates or your planned stay.</p>
+  </section>
+
+  <section class="section">
+    <div class="container two-column">
+      <div class="contact-details">
+        <p class="eyebrow">We Are Here to Help</p>
+        <h2>Speak to Our Hotel Team</h2>
+        <p>Contact hotel management before making your final booking to confirm room availability and rates.</p>
+
+        <h3>Hotel Owner / Manager</h3>
+        <p>Grand Horizon Hotel Management</p>
+
+        <h3>Phone / WhatsApp</h3>
+        <p>Replace this line with the owner's real phone number.</p>
+
+        <h3>Email Address</h3>
+        <p>Replace this line with the owner's real email address.</p>
+
+        <h3>Hotel Address</h3>
+        <p>Add the actual hotel address here.</p>
+
+        <a class="btn" href="rooms.html">View Available Room Types</a>
+      </div>
+
+      <form class="form-card" id="contact-form">
+        <h2>Booking Inquiry Form</h2>
+        <p>Send your inquiry to hotel management.</p>
+
+        <div class="field">
+          <label for="contact-name">Full Name</label>
+          <input type="text" id="contact-name" name="name" placeholder="Your full name" required>
+        </div>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="contact-email">Email Address</label>
+            <input type="email" id="contact-email" name="email" placeholder="you@example.com" required>
+          </div>
+          <div class="field">
+            <label for="contact-phone">Phone Number</label>
+            <input type="tel" id="contact-phone" name="phone" placeholder="Your phone number" required>
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="contact-room">Room Type</label>
+          <select id="contact-room" name="room">
+            <option value="">Not decided yet</option>
+            <option value="Standard Room">Standard Room</option>
+            <option value="Deluxe Room">Deluxe Room</option>
+            <option value="Luxury Suite">Luxury Suite</option>
+          </select>
+        </div>
+
+        <div class="form-grid">
+          <div class="field">
+            <label for="contact-checkin">Preferred Check-in</label>
+            <input type="date" id="contact-checkin" name="checkin">
+          </div>
+          <div class="field">
+            <label for="contact-checkout">Preferred Check-out</label>
+            <input type="date" id="contact-checkout" name="checkout">
+          </div>
+        </div>
+
+        <div class="field">
+          <label for="contact-message">Message / Booking Question</label>
+          <textarea id="contact-message" name="message" placeholder="Ask about availability, prices or booking..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn">Submit Inquiry</button>
+        <div class="notice" id="contact-notice" role="status" aria-live="polite"></div>
+      </form>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="container">
+    <p>Grand Horizon Hotel</p>
+    <p>Contact management to confirm bookings and availability.</p>
+    <p>&copy; 2026 Grand Horizon Hotel</p>
+  </div>
+</footer>
+</body>
+</html>
+
+
+
